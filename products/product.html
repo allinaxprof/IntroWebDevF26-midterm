@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Page | IMBROKE</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../js/main.js"></script>
+  </head>
+  <body>
+    <!-- navbar sticky to the top -->
+    <header>
+      <!-- logo and h2 website name ("IMBROKE") on the left -->
+      <div class="brand">
+        <a href="../index.html">
+          <img class="logo" src="../img/imbroke-logo.png" alt="IMBROKE logo" />
+        </a>
+        <h2><a href="../index.html">IMBROKE</a></h2>
+      </div>
+
+      <!-- hamburger, hidden until phone size, toggles the links below -->
+      <span class="mobile-menu" id="mobile-menu" onclick="toggleShow()">&#8801;</span>
+
+      <!-- links in the center, evenly spaced between the logo on the left and the right side div -->
+      <nav>
+        <ul class="menu" id="menu">
+          <li class="sale-item">
+            <a href="../sale.html">SALE</a>
+            <!-- square sale photo, only shown in the phone menu -->
+            <a class="sale-photo" href="../sale.html"><img src="../img/aviationjacket-women.jpeg" alt="Aviation jacket on sale" /></a>
+          </li>
+          <li class="has-dropdown">
+            <a href="../womens.html">Women's</a>
+            <div class="dropdown">
+              <div class="dropdown-new">
+                <h3>NEW</h3>
+                <a href="../products/product-blue-graphic-shirt.html"><img src="../img/bluegraphicshirt-women.jpeg" alt="New blue graphic shirt" /></a>
+              </div>
+              <div class="dropdown-col">
+                <h3>By Piece</h3>
+                <ul>
+                  <li><a href="../womens-tops.html">Tops</a></li>
+                  <li><a href="../womens-bottoms.html">Bottoms</a></li>
+                  <li><a href="../womens-shoes.html">Shoes</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-col">
+                <h3>By Style</h3>
+                <ul>
+                  <li><a href="../womens-casual.html">Casual</a></li>
+                  <li><a href="../womens-evening.html">Evening</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="has-dropdown">
+            <a href="../mens.html">Men's</a>
+            <div class="dropdown">
+              <div class="dropdown-new">
+                <h3>NEW</h3>
+                <a href="../products/product-black-blazer.html"><img src="../img/blackblazer-men.jpeg" alt="New black blazer" /></a>
+              </div>
+              <div class="dropdown-col">
+                <h3>By Piece</h3>
+                <ul>
+                  <li><a href="../mens-tops.html">Tops</a></li>
+                  <li><a href="../mens-bottoms.html">Bottoms</a></li>
+                  <li><a href="../mens-shoes.html">Shoes</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-col">
+                <h3>By Style</h3>
+                <ul>
+                  <li><a href="../mens-casual.html">Casual</a></li>
+                  <li><a href="../mens-evening.html">Evening</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- right side, questionmark icon, a link to My Cart and link to account settings, placeholder Name Name -->
+      <div class="account" id="account">
+        <img class="icon" src="../img/questionmark.png" alt="Help" />
+        <a href="../cart.html">My Cart</a>
+        <a href="../account.html">Name Name</a>
+      </div>
+
+      <!-- footer links, hidden on desktop, shown at the bottom of the mobile menu -->
+      <div class="mobile-links" id="mobile-links">
+        <a href="../account.html">Account</a>
+        <a href="../careers.html">Careers</a>
+        <a href="../disclaimer.html">Disclaimer</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../mission.html">Our Mission</a>
+      </div>
+    </header>
+
+    <!-- product page, a grid of col 2 -->
+    <main class="product">
+      <!-- product image on the left, 40vw with a thick accent border -->
+      <img src="../img/redshirtsmall.png" alt="Product photo" />
+
+      <!-- product info on the right, name at the top and care instructions at the bottom -->
+      <article>
+        <h2>Product Name</h2>
+        <p class="price">$00.00</p>
+        <p>A short description of the product: what it is, what it's made of, and how it fits.</p>
+
+        <!-- sizes link to nothing for now, the selected one has the active class and is bolded -->
+        <h3 class="sizes">
+          <a href="#" onclick="selectSize(this)">S</a>
+          <a href="#" class="active" onclick="selectSize(this)">M</a>
+          <a href="#" onclick="selectSize(this)">L</a>
+          <a href="#" onclick="selectSize(this)">XL</a>
+        </h3>
+
+        <!-- buy buttons, hovering either one shows the popup below -->
+        <div class="buy-buttons">
+          <button class="btn" type="button">Add to Cart</button>
+          <button class="btn btn-outline" type="button">Buy Now</button>
+          <div class="hover-modal">Does clicking the button really bring you happiness?</div>
+        </div>
+
+        <p class="care">Care instructions: Machine wash cold with like colors. Tumble dry low.</p>
+      </article>
+    </main>
+
+    <!-- footer, same color as the navbar, a grid of col 2 -->
+    <footer>
+      <!-- left half, logo and website name in a large font -->
+      <div class="footer-brand">
+        <a href="../index.html">
+          <img class="footer-logo" src="../img/imbroke-logo.png" alt="IMBROKE logo" />
+        </a>
+        <h2><a href="../index.html">IMBROKE</a></h2>
+      </div>
+
+      <!-- right half, links split into two columns -->
+      <ul class="footer-links">
+        <li><a href="../account.html">Account</a></li>
+        <li><a href="../careers.html">Careers</a></li>
+        <li><a href="../disclaimer.html">Disclaimer</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../mission.html">Our Mission</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
